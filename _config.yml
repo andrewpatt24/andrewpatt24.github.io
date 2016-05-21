@@ -9,13 +9,12 @@
 title: Andrew Patterson
 email: andrewpatt24@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, I’m Andrew. I am currently working as an Insight Analyst at Channel 4 in an award winning data science team, developing supervised and unsupervised learning models/approaches to gain the insight of the channels viewers and build data driven products. I am fluent in R from extensive use at university and in employment. I have been regularly using cloud computing resources (using Amazon web services) during my time at my current employment, getting to grips with Hadoop and HiveQL on a daily basis. My interest lies in learning innovative and cutting edge approaches, and in my spare time I have also learned the basics of web development, taking courses in HTML, CSS, JS and D3 Visualisations, as well as self learning Python. I also love to work with D3 Visualisations to show different aspects of the data I work with. I’m looking to incorporate all of this into my blog in the coming few weeks. I’ve put this blog together to encompass my love of Data and Visualisations, and hopefully I can add a bit of a foodie slant to it. The post may seem a little disjointed but I am working on many that will overlap in the future!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://andrewpatt24@github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username:  andrewpatt24
-
+linkedin_username:    andrewpatt
+# uk.linkedin.com/in/andrewpatt
 # Build settings
 markdown: kramdown
