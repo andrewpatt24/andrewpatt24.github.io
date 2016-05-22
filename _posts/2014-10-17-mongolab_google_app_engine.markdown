@@ -2,7 +2,7 @@
 layout: post
 title:  "Automating Mongodb databases with Mongolab and Google's app engine"
 date:   2014-10-17 12:37:01 +0100
-categories: Mongodb Python python BeautifulSoup
+categories: [mongodb,python,beautifulsoup]
 ---
 After <a href="http://www.dinnerwithdata.com/picking-a-fantasy-football-team-using-optimization/" title="Picking a fantasy football team using optimisation" target="_blank">optimising fantasy football teams</a> in one of my previous posts, I wanted to take this idea further, and see if I can find an automated approach for substitutions and team selections through the season.
 

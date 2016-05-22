@@ -2,7 +2,7 @@
 layout: post
 title:  "Using BeautifulSoup4 in Python"
 date:   2014-07-08 15:50:01 +0100
-categories: Python python BeautifulSoup
+categories: [python, beautifulsoup]
 ---
 I have been keen to have a go at webscraping for a while now. I've also wanted to do some visualisations on the vast online libraries of recipes across the web. I have been visiting <a title="Open Source Food" href="http://www.opensourcefood.com" target="_blank">Open Source Food</a> a lot for new recipes, and the fact that most of the recipes are tagged means there is a perfect link between all the recipes on the website. They use a wordcloud on the website for the visualisation but I think there is so much more you can do with this data.
 

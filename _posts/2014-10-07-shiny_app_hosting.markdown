@@ -2,7 +2,7 @@
 layout: post
 title:  "Shiny applications hosting on shinyapps.io"
 date:   2014-08-12 09:41:01 +0100
-categories: R Shiny
+categories: [R, shiny]
 ---
 I've thought shiny apps were a good idea for a while now. For anyone who doesn't know, Shiny is a package in Rstudio to create Web applications powered by R (you can find out more <a title="Shiny for rstudio" href="http://shiny.rstudio.com/" target="_blank">here</a>). Locally, these can be good ways to graphically explore data. To share them though, they need a dedicated shiny server. Given this fact, I've been torn as to whether they are actually worth it, as it may just be easier to create aweb application from scratch using html/css/javascript and some of the popular scripts like d3.js.
 

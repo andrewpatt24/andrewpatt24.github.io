@@ -2,7 +2,7 @@
 layout: post
 title:  "Picking a fantasy football team using optimization"
 date:   2014-08-12 09:41:01 +0100
-categories: R
+categories: [R]
 ---
 It's that time again in the year when all of my friends are putting together fantasy premier league competitions, and after failing numerous years with my distinct lack of football knowledge, I thought I would employ a strategy I am actually good at.
 

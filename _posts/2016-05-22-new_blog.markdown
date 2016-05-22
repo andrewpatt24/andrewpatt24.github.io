@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to the new site!"
 date:   2016-05-22 13:03:00 +0100
-categories: github pages
+categories: [github]
 ---
 
 Welcome to the new site!

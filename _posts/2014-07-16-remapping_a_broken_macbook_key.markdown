@@ -2,7 +2,7 @@
 layout: post
 title:  "Re-mapping a broken macbook key"
 date:   2014-07-16 09:41:01 +0100
-categories: xml
+categories: [xml]
 ---
 I recently started using an old macbook, cleaning out the whole hard drive and re-installing Mavericks OS-X on it. The problem was it had a broken zero key. At first I thought I could deal with it, but I didn't get to the second line of some new code before I realised the biggest problem: No closing bracket. Damn it.
 
