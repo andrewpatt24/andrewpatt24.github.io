@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Welcome to the new site!"
+date:   2016-05-22 13:03:00 +0100
+categories: github pages
+---
+
+Welcome to the new site!
+
+This is just a quick note to say I've now moved!
+
+I've moved over from my original blog site www.dinnerwithdata.com onto github pages [andrewpatt24.github.io](http://andrewpatt24.github.io). Unfortunately I'm no longer going to be using wordpress which comes with its positive points, but with github pages it means I can have greater control of the site and use google analytics for tracking instead!
+
+Anyone coming to the old site will now be re-directed.
+
+Thanks to [Pannos Sakkos](https://github.com/PanosSakkos) for the Jekyll theme - linked [here](http://jekyllthemes.org/themes/personal/).
+
+Enjoy!
