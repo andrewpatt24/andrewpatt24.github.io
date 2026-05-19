@@ -1,5 +1,6 @@
 {% if include.show_posts %}
 <div class="container animate">
+  {% include tag-filter.html type="posts" %}
   <div class="row" data-pagebreak="6">
     {% for post in site.posts %}
       {% bookshop blog-card post=post %}

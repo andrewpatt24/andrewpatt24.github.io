@@ -1,53 +1,122 @@
-# Vonge
+# Portfolio site (Vonge + Jekyll)
 
-Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://jazzed-kale.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+A personal portfolio based on the [Vonge](https://cloudcannon.com/templates/vonge/?ssg=jekyll) Jekyll template. Use it for LinkedIn, your CV, and GitHub Pages.
 
-![Vonge template screenshot](_screenshot.png)
+- **Writing** — blog-style write-ups with tags (AI, ML, Python, …)
+- **Projects** — showcase GitHub repos with tags and a filter bar
+- **Tag filters** — topic pills on Writing and Projects pages
 
-Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
-The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
+## Run locally
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
+```bash
+npm install
+npm run jekyll:install
+npm start
+```
 
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-jekyll-bookshop-template)
+Open [http://localhost:6060](http://localhost:6060).
 
-## Features
+## Publish to GitHub Pages
 
-* Component library for website building
-* Fully configurable Website
-* Pre-built pages
-* Pre-styled components
-* Blog
-* Category pages
-* Testimonials
-* Portfolio
-* Live editing with [CloudCannon](http://cloudcannon.com/)
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Search engine optimisation
+1. Create a new repo on GitHub (e.g. `andyp-portfolio`).
+2. Push this project:
 
-## Develop
+   ```bash
+   git remote remove origin   # if still pointing at the template repo
+   git remote add origin git@github.com:YOUR_USERNAME/andyp-portfolio.git
+   git push -u origin main
+   ```
 
-Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
+3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+4. Edit `site/_config.yml`:
 
-Install the dependencies for Bookshop:
+   ```yaml
+   url: "https://YOUR_GITHUB_USERNAME.github.io"
+   baseurl: "/andyp-portfolio"   # repo name; use "" for username.github.io repo
+   ```
 
-~~~bash
-$ npm install
-~~~
+5. Push to `main`. The workflow in `.github/workflows/pages.yml` builds and deploys the site.
 
-Install the Jekyll dependencies with [Bundler](http://bundler.io/):
+Your site will be at `https://YOUR_GITHUB_USERNAME.github.io/andyp-portfolio/`.
 
-~~~bash
-$ npm run jekyll:install
-~~~
+## What to personalize
 
-Run the website:
+| What | Where |
+|------|--------|
+| Name & avatar | `site/_data/author.yml` |
+| Site title & meta description | `site/_data/general_settings.yml` |
+| GitHub & LinkedIn links | `site/_data/social_links.yml` |
+| Menu | `site/_data/navigation.yml` |
+| Home hero & sections | `site/collections/_pages/index.html` |
+| About page | `site/collections/_pages/about.html` |
+| Profile photo | Replace `site/images/avatar.jpg`, `site/images/01.jpg` |
+| GitHub Pages URL | `site/_config.yml` (`url`, `baseurl`) |
+| Placeholder GitHub URLs | Example projects in `site/collections/_projects/` |
 
-~~~bash
-$ npm start
-~~~
+### Add a write-up
 
+Create `site/collections/_posts/YYYY-MM-DD-my-article.markdown`:
 
-> [!IMPORTANT]
-> When running locally, the pagination will not work. Deploy to CloudCannon to see successful pagination. 
+```yaml
+---
+date: 2025-05-19
+title: My article title
+description: Short summary for cards and SEO.
+tags:
+  - ai
+  - ml
+image: /images/post-1.jpg
+---
+
+Your content here (Markdown).
+```
+
+Tags power the filter bar on **Writing** and create pages like `/tag/ai`.
+
+### Add a GitHub project
+
+Create `site/collections/_projects/YYYY-MM-DD-repo-name.md`:
+
+```yaml
+---
+date: 2025-05-19
+title: My repo name
+subtitle: Python · FastAPI
+image: '/images/project-1.jpg'
+tags:
+  - ai
+  - python
+github_url: https://github.com/YOUR_USERNAME/my-repo
+---
+
+Short description of the project.
+```
+
+Tags power the filter bar on **Projects** (client-side filter).
+
+### Images
+
+Add images under `site/images/`. Reference them in front matter as `/images/your-file.jpg`.
+
+### Optional removals
+
+- **Newsletter** — remove `newsletter` blocks from page front matter in `site/collections/_pages/`.
+- **Testimonials** — delete `site/collections/_testimonials/` or keep `show_testimonials: false` on the home page.
+- **Contact form** — remove the `contact-form` block from `index.html` (or configure email in CloudCannon; locally it is display-only).
+
+## Project structure
+
+```
+site/
+  collections/
+    _posts/       # Write-ups
+    _projects/    # GitHub repos & portfolio items
+    _pages/       # Home, About, Blog, Projects
+  _data/          # Author, nav, social links
+  images/
+component-library/  # Vonge UI components (Bookshop)
+```
+
+## Credits
+
+Template: [CloudCannon/vonge-jekyll-bookshop-template](https://github.com/CloudCannon/vonge-jekyll-bookshop-template) ([Vonge on CloudCannon](https://cloudcannon.com/templates/vonge/?ssg=jekyll)).

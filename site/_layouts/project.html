@@ -10,6 +10,12 @@ layout: default
 
   <div class="page animate">
     {{ content }}
+
+    {% if page.github_url %}
+    <p class="project__github-link">
+      <a href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </p>
+    {% endif %}
   </div>
 
   {% if page.previous.url %}

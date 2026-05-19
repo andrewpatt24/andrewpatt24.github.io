@@ -1,5 +1,6 @@
 {% assign c = "c-project-card" %}
-<article class="{{c}} col col-4 col-d-6 col-t-12">
+{% assign project_tags = include.project.tags | join: ',' | downcase %}
+<article class="{{c}} col col-4 col-d-6 col-t-12" data-project-card{% if project_tags != "" %} data-tags="{{ project_tags }}"{% endif %}>
   <div class="{{c}}__content">
     <a href="{{ include.project.url }}" class="{{c}}__image">
       <img loading="lazy" src="{{ include.project.image }}" alt="{{ include.project.title }}">

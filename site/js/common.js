@@ -143,4 +143,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  /* =======================
+  // Project tag filter
+  ======================= */
+  var projectFilter = document.querySelector("[data-project-filter]");
+  var projectGrid = document.querySelector("[data-project-grid]");
+
+  if (projectFilter && projectGrid) {
+    var projectCards = projectGrid.querySelectorAll("[data-project-card]");
+    var filterButtons = projectFilter.querySelectorAll("[data-project-tag]");
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var selectedTag = button.getAttribute("data-project-tag");
+
+        filterButtons.forEach(function (item) {
+          item.classList.remove("tag-filter__tag--active");
+        });
+        button.classList.add("tag-filter__tag--active");
+
+        projectCards.forEach(function (card) {
+          var cardTags = (card.getAttribute("data-tags") || "").split(",");
+          var isVisible = selectedTag === "all" || cardTags.indexOf(selectedTag) !== -1;
+          card.classList.toggle("is-hidden", !isVisible);
+        });
+      });
+    });
+  }
+
 });

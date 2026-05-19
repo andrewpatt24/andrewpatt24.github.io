@@ -62,6 +62,20 @@
 	margin: 0 auto;
 }
 
+.project__github-link {
+	margin-top: 32px;
+
+	a {
+		display: inline-block;
+		padding: 12px 20px;
+		font-weight: 600;
+		text-decoration: none;
+		color: $white;
+		border-radius: 8px;
+		background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+	}
+}
+
 .post-tags {
 	display: flex;
 	

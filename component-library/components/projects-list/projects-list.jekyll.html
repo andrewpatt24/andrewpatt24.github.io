@@ -1,6 +1,7 @@
 {% if include.show_projects %}
 <div class="container animate">
-  <div class="row">
+  {% include tag-filter.html type="projects" %}
+  <div class="row" data-project-grid>
     {% for project in site.projects %}
       {% bookshop project-card project=project %}
     {% endfor %}

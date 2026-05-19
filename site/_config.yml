@@ -1,4 +1,7 @@
-title: Vonge
+title: Andy Portfolio
+# User site: repo must be named apatterson.github.io, baseurl must be empty.
+url: "https://apatterson.github.io"
+baseurl: ""
 
 plugins:
   - jekyll-bookshop
