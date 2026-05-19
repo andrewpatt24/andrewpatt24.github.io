@@ -29,10 +29,17 @@ jobs:
         with:
           ruby-version: "3.2"
           bundler-cache: true
+        env:
+          BUNDLE_GEMFILE: ${{ github.workspace }}/site/Gemfile
 
       - run: npm ci
       - run: npm run jekyll:install
       - run: npm run build
+
+      - name: Verify build output
+        run: |
+          test -d site/_site || (echo "Expected site/_site; found:" && ls -la && ls -la site 2>/dev/null; exit 1)
+          test -f site/_site/index.html
 
       - uses: actions/upload-pages-artifact@v3
         with:

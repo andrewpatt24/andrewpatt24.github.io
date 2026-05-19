@@ -18,26 +18,31 @@ Open [http://localhost:6060](http://localhost:6060).
 
 ## Publish to GitHub Pages
 
-1. Create a new repo on GitHub (e.g. `andyp-portfolio`).
-2. Push this project:
+This site uses **Bookshop** (`{% bookshop_scss %}`, `jekyll-bookshop`). GitHub’s built-in Jekyll builder does **not** include those plugins. You must deploy with the **GitHub Actions** workflow in `.github/workflows/pages.yml`, not “Deploy from a branch”.
 
-   ```bash
-   git remote remove origin   # if still pointing at the template repo
-   git remote add origin git@github.com:YOUR_USERNAME/andyp-portfolio.git
-   git push -u origin main
-   ```
-
-3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+1. Create a repo (for a user site, name it `YOUR_USERNAME.github.io`).
+2. Push this project to `main`.
+3. **Required:** In the repo go to **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions** (not “Deploy from a branch”). Choose the **Deploy GitHub Pages** workflow if prompted.
 4. Edit `site/_config.yml`:
 
    ```yaml
-   url: "https://YOUR_GITHUB_USERNAME.github.io"
-   baseurl: "/andyp-portfolio"   # repo name; use "" for username.github.io repo
+   # User site (repo named YOUR_USERNAME.github.io):
+   url: "https://YOUR_USERNAME.github.io"
+   baseurl: ""
+
+   # Project site (repo named something else):
+   url: "https://YOUR_USERNAME.github.io"
+   baseurl: "/your-repo-name"
    ```
 
-5. Push to `main`. The workflow in `.github/workflows/pages.yml` builds and deploys the site.
+5. Push to `main`, or run **Actions → Deploy GitHub Pages → Run workflow**.
 
-Your site will be at `https://YOUR_GITHUB_USERNAME.github.io/andyp-portfolio/`.
+- User site URL: `https://YOUR_USERNAME.github.io/`
+- Project site URL: `https://YOUR_USERNAME.github.io/your-repo-name/`
+
+### Pages build failed: `Unknown tag 'bookshop_scss'`
+
+That log means GitHub ran its **default** Pages Jekyll build (`github-pages` gem, Jekyll 3.10, `jekyll-theme-primer`) on the raw repo. Switch **Pages → Source** to **GitHub Actions** as above, then re-run **Deploy GitHub Pages**. The Actions workflow uses Jekyll 4.3 + Bookshop and publishes the built output from `site/_site`.
 
 ## What to personalize
 
