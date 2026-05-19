@@ -40,6 +40,18 @@ This site uses **Bookshop** (`{% bookshop_scss %}`, `jekyll-bookshop`). GitHub�
 - User site URL: `https://YOUR_USERNAME.github.io/`
 - Project site URL: `https://YOUR_USERNAME.github.io/your-repo-name/`
 
+### Temporarily take the site offline
+
+While `offline/ENABLED` exists, the deploy workflow publishes a simple “Back soon” page instead of the full site.
+
+```bash
+# Take down
+touch offline/ENABLED && git add offline/ENABLED && git commit -m "Enable maintenance mode" && git push
+
+# Bring back
+git rm offline/ENABLED && git commit -m "Disable maintenance mode" && git push
+```
+
 ### Pages build failed: `Unknown tag 'bookshop_scss'`
 
 That log means GitHub ran its **default** Pages Jekyll build (`github-pages` gem, Jekyll 3.10, `jekyll-theme-primer`) on the raw repo. Switch **Pages → Source** to **GitHub Actions** as above, then re-run **Deploy GitHub Pages**. The Actions workflow uses Jekyll 4.3 + Bookshop and publishes the built output from `site/_site`.
