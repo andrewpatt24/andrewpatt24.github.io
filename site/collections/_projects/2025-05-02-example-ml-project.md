@@ -7,7 +7,7 @@ tags:
   - ai
   - ml
   - python
-github_url: https://github.com/apatterson/example-ml-project
+github_url: https://github.com/andrewpatt24/example-ml-project
 ---
 
 Replace this with a real repo. Add a short description of what the project does, what you learned, and link to the README on GitHub.

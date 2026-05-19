@@ -1,6 +1,6 @@
 title: Andy Portfolio
-# User site: repo must be named apatterson.github.io, baseurl must be empty.
-url: "https://apatterson.github.io"
+# User site: repo must be named andrewpatt24.github.io, baseurl must be empty.
+url: "https://andrewpatt24.github.io"
 baseurl: ""
 
 plugins:
