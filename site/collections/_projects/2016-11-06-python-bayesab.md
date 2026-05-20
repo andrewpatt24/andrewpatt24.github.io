@@ -2,7 +2,7 @@
 date: 2016-11-06
 title: python_bayesAB
 subtitle: Python · PyMC3 · Bayesian inference
-image: '/images/project-1.jpg'
+image: '/images/posts/bayesian-ab-pymc3.jpg'
 tags:
   - ml
   - python

@@ -2,7 +2,7 @@
 date: 2017-06-01
 title: NNOutlier
 subtitle: Python · replicator neural networks
-image: '/images/project-3.jpg'
+image: '/images/posts/nn-outlier-gaming.jpg'
 tags:
   - ai
   - ml

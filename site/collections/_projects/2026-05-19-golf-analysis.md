@@ -2,7 +2,7 @@
 date: 2026-05-19
 title: golf-analysis
 subtitle: Python · SQLite · FastAPI · React
-image: '/images/project-2.jpg'
+image: '/images/posts/golf-coach.jpg'
 tags:
   - python
   - ai

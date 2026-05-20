@@ -1,4 +1,6 @@
-# Post cover images (Unsplash)
+# Post & project cover images (Unsplash)
+
+Project cards reuse the same files as their related blog posts where applicable.
 
 Free to use under the [Unsplash License](https://unsplash.com/license). Attribution appreciated but not required.
 

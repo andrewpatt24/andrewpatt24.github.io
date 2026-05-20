@@ -2,7 +2,7 @@
 date: 2016-12-31
 title: Beercrawl
 subtitle: Python · Flask · Google Maps
-image: '/images/project-2.jpg'
+image: '/images/posts/beercrawl-london.jpg'
 tags:
   - python
   - web

@@ -2,7 +2,7 @@
 date: 2026-05-19
 title: gopro-upload
 subtitle: Python CLI · GoPro cloud → Google Drive
-image: '/images/project-1.jpg'
+image: '/images/posts/gopro-upload.jpg'
 tags:
   - python
   - tools
