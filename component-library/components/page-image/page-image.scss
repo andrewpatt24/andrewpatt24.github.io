@@ -27,3 +27,51 @@
 		margin-bottom: 32px;
 	}
 }
+
+// Portrait avatar — same dimensions as the home hero image
+.c-page-image--portrait {
+	padding-top: 0;
+	min-height: 0;
+	width: 480px;
+	height: 520px;
+	max-width: 100%;
+	margin: 0 auto 48px;
+	border-radius: 60px;
+
+	img {
+		border-radius: 60px;
+		box-shadow: 0px 100px 80px rgba($primary-color, 0.07), 0px 41.7776px 33.4221px rgba($primary-color, 0.0503198), 0px 22.3363px 17.869px rgba($primary-color, 0.0417275), 0px 12.5216px 10.0172px rgba($primary-color, 0.035), 0px 6.6501px 5.32008px rgba($primary-color, 0.0282725), 0px 2.76726px 2.21381px rgba($primary-color, 0.0196802);
+	}
+
+	@media only screen and (max-width: 1130px) {
+		width: 400px;
+		height: 420px;
+	}
+
+	@media only screen and (max-width: $desktop) {
+		width: 340px;
+		height: 360px;
+		margin-bottom: 40px;
+	}
+
+	@media only screen and (max-width: $tablet) {
+		width: 100%;
+		height: 380px;
+		border-radius: 30px;
+
+		img {
+			border-radius: 30px;
+		}
+	}
+
+	@media only screen and (max-width: $mobile) {
+		height: 280px;
+		margin-bottom: 32px;
+		border-radius: 16px;
+
+		img {
+			border-radius: 16px;
+			box-shadow: none;
+		}
+	}
+}
