@@ -63,6 +63,10 @@
     p {
       margin: 0;
     }
+
+    &:has(.writing-disclaimer) {
+      max-width: 100%;
+    }
   }
 
   @media only screen and (max-width: $desktop) {
@@ -93,4 +97,14 @@
   font-size: 15px;
   line-height: 1.55;
   opacity: 0.82;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
