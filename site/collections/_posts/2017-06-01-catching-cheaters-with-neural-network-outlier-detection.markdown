@@ -12,9 +12,9 @@ tags:
 image: /images/posts/nn-outlier-gaming.jpg
 ---
 
-Cheaters are rare accounts and loud problems: support load, broken economies, competitive distrust. Client patches and network fixes do not end the arms race. **Post-hoc detection** (review, throttle, ban) on telemetry is the complement.
+[Watch the PyData London 2017 talk on YouTube](https://www.youtube.com/watch?v=Q2HLPCBStLQ) — *War on Cheaters: Outlier Detection methods for cheating in mobile games*. Reference code: [NNOutlier](https://github.com/andrewpatt24/NNOutlier).
 
-Summary of PyData London 2017, *War on Cheaters: Outlier Detection methods for cheating in mobile games*, plus [NNOutlier](https://github.com/andrewpatt24/NNOutlier).
+Cheaters are rare accounts and loud problems: support load, broken economies, competitive distrust. Client patches and network fixes do not end the arms race. **Post-hoc detection** (review, throttle, ban) on telemetry is the complement.
 
 ## F2P base rates
 
