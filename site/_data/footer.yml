@@ -11,5 +11,8 @@ footer_menu__settings:
     - title: 'Blog'
       url: '/blog/'
 
+disclaimer_text_html: >-
+  <p>This is a personal blog. Any opinions are my own and in no way reflect current or
+  former employers or businesses I work with.</p>
 copyright_text_html: >-
   <p>2026 &copy; <a href="/">Andy Patterson</a>. Template: <a href="https://cloudcannon.com/templates/vonge/?ssg=jekyll">Vonge</a> (Jekyll) by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>
