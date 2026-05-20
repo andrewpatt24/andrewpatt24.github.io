@@ -1,0 +1,11 @@
+# config-tone.txt — YOUR writing samples (this project)
+#
+# Paste prose you wrote yourself. The write-technical-blog-post skill reads this file
+# before drafting so posts match your cadence, not generic AI tone.
+#
+# Empty? Next time you use write-technical-blog-post, the agent runs a short voice
+# interview (~5 min) and saves your answers below. Or paste your own samples anytime.
+# Rules: ~/.cursor/skills/write-technical-blog-post/best-practices.md
+#
+# --- Paste your samples below (or leave blank for voice interview) ---
+
