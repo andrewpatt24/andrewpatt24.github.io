@@ -18,7 +18,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   title: Recent Works
-  description_html: Vonge blog features productivity, tips, inspiration and
+  description_html: Blog section for posts on productivity, tips, inspiration and
     strategies for massive profits. Find out how to set up a successful blog or
     how to make yours even better!
   link_url: /blog
