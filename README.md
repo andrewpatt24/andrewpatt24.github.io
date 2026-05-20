@@ -66,7 +66,7 @@ That log means GitHub ran its **default** Pages Jekyll build (`github-pages` gem
 | Menu | `site/_data/navigation.yml` |
 | Home hero & sections | `site/collections/_pages/index.html` |
 | About page | `site/collections/_pages/about.html` |
-| Profile photo | Replace `site/images/avatar.jpg`, `site/images/01.jpg` |
+| Profile photo | `site/images/avatar.png` (hero, author byline, OG share image) |
 | GitHub Pages URL | `site/_config.yml` (`url`, `baseurl`) |
 | Placeholder GitHub URLs | Example projects in `site/collections/_projects/` |
 
