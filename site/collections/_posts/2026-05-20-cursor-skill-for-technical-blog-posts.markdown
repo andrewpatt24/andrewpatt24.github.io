@@ -7,7 +7,7 @@ description: >-
 tags:
   - ai
   - tools
-image: /images/post-8.jpg
+image: /images/posts/cursor-blog-skill.jpg
 ---
 
 I kept starting blog posts about side projects and stopping at the same place: enough context in my head, too little on the page, and a draft that sounded like every other AI article. Outlines help. So does [Rizèl Scarlett’s guide to technical blogging](https://dev.to/blackgirlbytes/the-ultimate-guide-to-writing-technical-blog-posts-5464). Neither tells Cursor *how I write* or forces the boring interview before the prose.

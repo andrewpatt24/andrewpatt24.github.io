@@ -8,7 +8,7 @@ tags:
   - ml
   - python
   - statistics
-image: /images/post-5.jpg
+image: /images/posts/bayesian-ab-pymc3.jpg
 ---
 
 You run an **A/B test**: split traffic, count conversions, then someone asks for **P(B beats A)** in addition to whether the difference cleared α = 0.05.

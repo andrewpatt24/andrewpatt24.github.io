@@ -8,7 +8,7 @@ description: >-
 tags:
   - python
   - ai
-image: /images/post-7.jpg
+image: /images/posts/golf-coach.jpg
 ---
 
 Tuesday on the range: **Rapsodo** for carry, dispersion, path versus face. Sunday on the course: **Garmin** for score, strokes-gained snippets, shot traces when the export cooperates. In between I was playing the [**Scoring Method**](https://thescoringmethod.com/) way (ESZ, DSZ, the 100-yard ring). Three apps, zero shared answer to *what should I work on this week?*

@@ -8,7 +8,7 @@ description: >-
 tags:
   - python
   - tools
-image: /images/post-6.jpg
+image: /images/posts/gopro-upload.jpg
 ---
 
 **£4.99 a month** for GoPro Plus buys cloud storage. Bulk export is another matter. [gopro.com/media-library](https://gopro.com/media-library/) handles a clip; hundreds of gigabytes of action footage is slow, brittle, and feels built to keep you inside the product. I was paying to host video I could barely move.

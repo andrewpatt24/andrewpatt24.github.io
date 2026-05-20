@@ -7,7 +7,7 @@ description: >-
 tags:
   - python
   - web
-image: /images/post-2.jpg
+image: /images/posts/beercrawl-london.jpg
 ---
 
 *Pub crawl Saturday: start, end, how many stops?* Someone opens Google Maps, drops pins, and twenty minutes later the walking route still looks wrong.

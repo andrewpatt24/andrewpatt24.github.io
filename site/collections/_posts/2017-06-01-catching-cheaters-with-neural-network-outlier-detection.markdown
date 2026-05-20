@@ -9,7 +9,7 @@ tags:
   - ai
   - ml
   - python
-image: /images/post-3.jpg
+image: /images/posts/nn-outlier-gaming.jpg
 ---
 
 Cheaters are rare accounts and loud problems: support load, broken economies, competitive distrust. Client patches and network fixes do not end the arms race. **Post-hoc detection** (review, throttle, ban) on telemetry is the complement.
